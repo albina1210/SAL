@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Профиль"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/color_button"
+        android:textSize="30dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Familiya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/color_button"
+        app:boxStrokeColor="@color/color_button"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/TextView">
+
+        <EditText
+            android:id="@+id/editTextFamilya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:backgroundTint="@color/color_button"
+            android:hint="Фамилия"
+            android:inputType="text"
+            android:textColor="@color/color_button"
+            android:textColorHint="@color/color_button" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/color_button"
+        app:boxStrokeColor="@color/color_button"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Familiya">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:backgroundTint="@color/color_button"
+            android:hint="Имя"
+            android:inputType="text"
+            android:textColor="@color/color_button"
+            android:textColorHint="@color/color_button" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Otchestvo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/color_button"
+            app:boxStrokeColor="@color/color_button"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Name">
+
+            <EditText
+                android:id="@+id/editTextOtchestvo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:backgroundTint="@color/color_button"
+                android:hint="Отчество"
+                android:inputType="text"
+                android:textColor="@color/color_button"
+                android:textColorHint="@color/color_button" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/color_button"
+        app:boxStrokeColor="@color/color_button"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Otchestvo">
+
+        <EditText
+            android:id="@+id/editTextLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:backgroundTint="@color/color_button"
+            android:hint="E-mail"
+            android:inputType="text"
+            android:textColor="@color/color_button"
+            android:textColorHint="@color/color_button" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Role"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/color_button"
+            app:boxStrokeColor="@color/color_button"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Login">
+
+            <EditText
+                android:id="@+id/editTextRole"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:backgroundTint="@color/color_button"
+                android:hint="Роль"
+                android:inputType="text"
+                android:textColor="@color/color_button"
+                android:textColorHint="@color/color_button"
+                android:enabled="false"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/color_button"
+        app:boxStrokeColor="@color/color_button"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Role"
+        app:passwordToggleTint="@color/color_button">
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/color_button"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:textColor="@color/color_button"
+            android:textColorHint="@color/color_button"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PasswordRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/color_button"
+        app:boxStrokeColor="@color/color_button"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Password"
+        app:passwordToggleTint="@color/color_button">
+
+        <EditText
+            android:id="@+id/editTextPasswordRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/color_button"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Повторите пароль"
+            android:inputType="textPassword"
+            android:textColor="@color/color_button"
+            android:textColorHint="@color/color_button"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PasswordRepeat"
+        android:background="@drawable/drawable_button_exit"
+        android:fontFamily="@font/poppinslight"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:text="Сохранить"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+    </RelativeLayout>
+
+</ScrollView>

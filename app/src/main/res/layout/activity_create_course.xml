@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:padding="16dp"
+    tools:context=".Activity.CreateCourseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_backspace"/>
+
+    <TextView
+        android:id="@+id/Sozdanie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Создание нового курса"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20dp"
+        android:textColor="@color/color_button"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Sozdanie"
+        android:text="Название курса"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20dp"
+        android:textColor="@color/color_button"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTextCourseCurs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:backgroundTint="@color/color_button"
+        android:hint="Название курса"
+        android:inputType="text"
+        android:textColor="@color/color_button"
+        android:textColorHint="@color/color_button"
+        android:layout_below="@id/TextView"/>
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Описание курса"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20dp"
+        android:textColor="@color/color_button"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editTextCourseCurs" />
+
+    <EditText
+        android:id="@+id/editTextCourseOpisanie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание курса"
+        android:layout_below="@id/TextView1"
+        android:fontFamily="@font/poppinsregular"
+        android:backgroundTint="@color/color_button"
+        android:inputType="text"
+        android:textColor="@color/color_button"
+        android:textColorHint="@color/color_button" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCourseOpisanie"
+        android:background="@drawable/drawable_button_exit"
+        android:fontFamily="@font/poppinslight"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:text="Создать"
+        android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

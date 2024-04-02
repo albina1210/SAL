@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.SAL"
+        tools:targetApi="31">
+        <activity
+            android:name=".Fragment.UsersFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CursActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CreateCourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.MenuFragment"
+            android:exported="false" />
+        <activity
+            android:name=".LogSystemApp.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.CoursesFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.DictionaryFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.OutSystemFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.ProgressFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment.ProfileFragment"
+            android:exported="false" />
+        <activity
+            android:name=".LogSystemApp.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogSystemApp.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

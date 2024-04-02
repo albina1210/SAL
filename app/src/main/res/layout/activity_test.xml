@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/blue"
+    tools:context=".Activity.TestActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_backspace1" />
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/aqua"
+        android:text="Тест"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:justificationMode="inter_word"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_below="@id/TextView"
+        android:layout_height="wrap_content"
+        android:textColor="@color/aqua"
+        android:layout_marginTop="15sp"
+        android:justificationMode="inter_word"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/answerRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_below="@id/questionTextView"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_button_background"
+        android:textAllCaps="false"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/answerRadioGroup"
+        android:textColor="@color/color_button"
+        android:text="Отправить" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/house_menu"
+        android:icon="@drawable/home"
+        android:title="Главная"/>
+    <item
+        android:id="@+id/profile_menu"
+        android:icon="@drawable/profile"
+        android:title="Профиль"/>
+    <item
+        android:id="@+id/users_menu"
+        android:icon="@drawable/users"
+        android:title="Пользователи"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/progress_menu"
+        android:icon="@drawable/progress"
+        android:title="Прогресс"/>
+    <item
+        android:id="@+id/progress_student_menu"
+        android:icon="@drawable/progress"
+        android:title="Прогресс студентов"/>
+    <item
+        android:id="@+id/courses_menu"
+        android:icon="@drawable/courses"
+        android:title="Курсы"/>
+    <item
+        android:id="@+id/dictionary_menu"
+        android:icon="@drawable/dictionary"
+        android:title="Словарь"/>
+    <item
+        android:id="@+id/contact_menu"
+        android:icon="@drawable/contact"
+        android:title="Контактная информация"/>
+    <item android:title="Выход из системы">
+        <menu>
+            <item
+            android:id="@+id/out_menu"
+            android:icon="@drawable/out"
+            android:title="Выйти"/>
+        </menu>
+    </item>
+</menu>

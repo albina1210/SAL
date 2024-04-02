@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/sort1"
+        android:icon="@drawable/sort"
+        android:title="Сортировка от А до Я"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/sort2"
+        android:icon="@drawable/sort"
+        android:title="Сортировка от Я до А"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+</menu>

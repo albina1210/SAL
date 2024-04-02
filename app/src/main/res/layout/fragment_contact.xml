@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    tools:context=".Fragment.ContactFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Контактная информация"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="25dp"
+            android:textColor="@color/color_button"/>
+
+        <RelativeLayout
+            android:id="@+id/window"
+            android:gravity="center_vertical"
+            android:layout_width="330dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/TextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/shape_background">
+
+            <TextView
+                android:id="@+id/textprepod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Преподаватель: \nЗинкин Дмитрий Владимирович"
+                android:textColor="@color/color_button"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/texttgkanal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/textprepod"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Дополнительная информация: \https://t.me/SystemAdministratorLearn"
+                android:textColor="@color/color_button"
+                android:textSize="15dp"
+                android:autoLink="all"
+                android:textColorLink="@color/color_button" />
+
+            <TextView
+                android:id="@+id/texttgprep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/texttgkanal"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Связь с преподавателем: \nhttps://t.me/DSDiz"
+                android:textColor="@color/color_button"
+                android:textSize="15dp"
+                android:autoLink="all"
+                android:textColorLink="@color/color_button" />
+
+            <TextView
+                android:id="@+id/texttgrazrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/texttgprep"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Связь с разработчиком: \nhttps://t.me/Albina12Minnakhmetova"
+                android:textColor="@color/color_button"
+                android:textSize="15dp"
+                android:autoLink="all"
+                android:textColorLink="@color/color_button" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

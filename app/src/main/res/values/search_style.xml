@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">@color/color_button</item>
+        <item name="android:editTextColor">@color/color_button</item>
+        <item name="android:textColorHint">@color/blue</item>
+        <item name="android:tint">@color/color_button</item>
+    </style>
+</resources>

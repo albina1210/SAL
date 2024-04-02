@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_fon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogSystemApp.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:src="@drawable/sal4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Авторизация"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/TextView">
+
+        <EditText
+            android:id="@+id/editTextLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:backgroundTint="@color/white"
+            android:hint="E-mail"
+            android:textColorHighlight="@color/white"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:passwordToggleEnabled="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Login"
+        app:passwordToggleTint="@color/white"
+        >
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/ResetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_marginTop="10dp"
+        android:onClick="onClick_ResetPass"
+        android:text="Забыли пароль?"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResetPassword"
+        android:background="@drawable/drawable_button"
+        android:fontFamily="@font/poppinslight"
+        android:onClick="onClick_login"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp"
+        android:textAllCaps="false"
+        android:text="Войти"
+        android:textColor="@color/color_button"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="или"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/register_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/TextView2"
+        android:gravity="center_horizontal"
+        android:onClick="onClick_Regis"
+        android:text="Нет аккаунта? Тогда зарегистрируйся"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

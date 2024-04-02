@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/house_menu">
+
+    <fragment
+        android:id="@+id/house_menu"
+        android:name="com.example.sal.Fragment.MenuFragment"
+        android:label="Menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/profile_menu"
+        android:name="com.example.sal.Fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/users_menu"
+        android:name="com.example.sal.Fragment.UsersFragment"
+        android:label="Users"
+        tools:layout="@layout/fragment_users" />
+    <fragment
+        android:id="@+id/courses_menu"
+        android:name="com.example.sal.Fragment.CoursesFragment"
+        android:label="Courses"
+        tools:layout="@layout/fragment_courses" />
+    <fragment
+        android:id="@+id/progress_menu"
+        android:name="com.example.sal.Fragment.ProgressFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress" />
+    <fragment
+        android:id="@+id/progress_student_menu"
+        android:name="com.example.sal.Fragment.ProgressStudentFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress_student" />
+    <fragment
+        android:id="@+id/dictionary_menu"
+        android:name="com.example.sal.Fragment.DictionaryFragment"
+        android:label="Dictionary"
+        tools:layout="@layout/fragment_dictionary" />
+    <fragment
+        android:id="@+id/out_menu"
+        android:name="com.example.sal.Fragment.OutSystemFragment"
+        android:label="fragment_out_system"
+        tools:layout="@layout/fragment_out_system" />
+    <fragment
+        android:id="@+id/contact_menu"
+        android:name="com.example.sal.Fragment.ContactFragment"
+        android:label="fragment_contact_system"
+        tools:layout="@layout/fragment_contact" />
+
+</navigation>
